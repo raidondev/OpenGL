@@ -13,9 +13,9 @@ public:
 	Texture(const std::string& path);
 	~Texture();
 
-	void Bind(unsigned int slot = 0) const;
+	void Bind(unsigned int slot = 0) const; // Optional slot to bind texture
 	void Unbind() const;
 
 	inline int GetWidth() const { return m_Width; }
-	inline int GetHieght() const { return m_Height; }
+	inline int GetHeight() const { return m_Height; }
 };
